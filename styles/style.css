@@ -205,6 +205,7 @@
 }
 
 /* facts styles starts */
+
 .facts {
   margin-bottom: 100px;
 }
@@ -275,6 +276,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 50px 0;
 }
 
 .sponsor-icon img {
@@ -303,6 +305,7 @@
 .touch-right-content {
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
 }
 
 .message-input {
@@ -332,14 +335,13 @@
 }
 
 .input-container {
-  width: 50%;
   margin-bottom: 10px;
 }
 
 label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #ff900e;
 }
 
@@ -361,7 +363,6 @@ textarea {
   border-radius: 5px;
   border: none;
   background-color: #ff900e;
-
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
@@ -383,4 +384,134 @@ textarea {
   font-weight: 400;
   font-size: 20px;
   color: #424242;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner {
+    width: 90%;
+  }
+  .banner-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .banner-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .primary-button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .quick-list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .four-images {
+    grid-template-columns: 1fr;
+  }
+  .quick-list-content {
+    margin-top: 20px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .feature-button button {
+    left: 0;
+    top: 10px;
+    text-align: center;
+  }
+  .feature-right-content {
+    text-align: center;
+  }
+  .feature-img img {
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .facts {
+    margin-top: 50px;
+  }
+  .facts-content {
+    text-align: center;
+  }
+  .facts-content h2 {
+    border: none;
+  }
+  .fact-animate {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .primary-para {
+    margin: 20px 0;
+  }
+
+  .sponsor-icon {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .get-touch {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .touch-left-content {
+    text-align: center;
+  }
+  .touch-left-content h2 {
+    border: none;
+  }
+  .message-form {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .form-group {
+    flex-wrap: nowrap;
+  }
+
+  .input-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 0.8em;
+  }
+
+  input,
+  textarea {
+    font-size: 0.8em;
+  }
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .submit-button {
+    font-size: 0.8em;
+  }
+
+  .footer h4 {
+    font-size: 14px;
+  }
 }
